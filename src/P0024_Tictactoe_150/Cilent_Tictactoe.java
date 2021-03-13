@@ -137,7 +137,7 @@ public class Cilent_Tictactoe extends javax.swing.JFrame implements Runnable{
             jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
             jLabel2.setText("Tic-Tac-Toe");
 
-            jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\x455.png")); // NOI18N
+            jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\o455.png")); // NOI18N
             jLabel3.setText("jLabel3");
             jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
                   public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -145,7 +145,7 @@ public class Cilent_Tictactoe extends javax.swing.JFrame implements Runnable{
                   }
             });
 
-            jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\o455.png")); // NOI18N
+            jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\x455.png")); // NOI18N
             jLabel4.setText("jLabel3");
             jLabel4.setPreferredSize(new java.awt.Dimension(45, 45));
 
@@ -258,7 +258,7 @@ public class Cilent_Tictactoe extends javax.swing.JFrame implements Runnable{
             jPanel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
             jPanel7.setPreferredSize(new java.awt.Dimension(90, 90));
 
-            jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\x455.png")); // NOI18N
+            jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\x455.png")); // NOI18N
             jLabel12.setText("jLabel1");
 
             javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
@@ -313,7 +313,7 @@ public class Cilent_Tictactoe extends javax.swing.JFrame implements Runnable{
             jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
             jPanel8.setPreferredSize(new java.awt.Dimension(90, 90));
 
-            jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\o455.png")); // NOI18N
+            jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\o455.png")); // NOI18N
             jLabel13.setText("jLabel1");
 
             javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -692,7 +692,7 @@ public class Cilent_Tictactoe extends javax.swing.JFrame implements Runnable{
             );
 
             exit.setBackground(new java.awt.Color(255, 255, 255));
-            exit.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\cross.png")); // NOI18N
+            exit.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\cross.png")); // NOI18N
             exit.addActionListener(new java.awt.event.ActionListener() {
                   public void actionPerformed(java.awt.event.ActionEvent evt) {
                         exitActionPerformed(evt);
@@ -1009,15 +1009,15 @@ public class Cilent_Tictactoe extends javax.swing.JFrame implements Runnable{
                         matrix[i][j]=0;
                   }
             }
-            g1.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\white.png"));
-            g2.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\white.png"));
-            g3.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\white.png"));
-            g4.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\white.png"));
-            g5.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\white.png"));
-            g6.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\white.png"));
-            g7.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\white.png"));
-            g8.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\white.png"));
-            g9.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\white.png"));
+            g1.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\white.png"));
+            g2.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\white.png"));
+            g3.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\white.png"));
+            g4.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\white.png"));
+            g5.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\white.png"));
+            g6.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\white.png"));
+            g7.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\white.png"));
+            g8.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\white.png"));
+            g9.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\white.png"));
 }
       
       private void StartGameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StartGameActionPerformed
@@ -1150,11 +1150,11 @@ public class Cilent_Tictactoe extends javax.swing.JFrame implements Runnable{
       public void clickBox(JLabel g,int m, int n,int value){
             if(checkValidPos(m, n) && enable==true){
                   if (Xplayer) {
-                        g.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\x68.png"));
+                        g.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\x68.png"));
                         matrix[m][n] = 1;
                         sendtoServer("=" + SelectedRow + m + n + value + "x");
                   } else {
-                        g.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\o68.png"));
+                        g.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\o68.png"));
                         matrix[m][n] = 2;
                         sendtoServer("=" + SelectedRow + m + n + value + "o");
                   }
@@ -1303,8 +1303,8 @@ public class Cilent_Tictactoe extends javax.swing.JFrame implements Runnable{
                                                       playing=true;
                                                       Xplayer = true;
                                                       enable = true;
-                                                      jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\x455.png")); 
-                                                      jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\o455.png")); 
+                                                      jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\x455.png")); 
+                                                      jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\o455.png")); 
                                                       jPanel6.setBackground(new java.awt.Color(51, 204, 255));
                                                       jPanel4.setBackground(new java.awt.Color(255, 102, 102));
                                                       nofication.setText("Your turn!");
@@ -1431,8 +1431,8 @@ public class Cilent_Tictactoe extends javax.swing.JFrame implements Runnable{
                               CardLayout CLT=(CardLayout)this.getContentPane().getLayout();
                               CLT.show(this.getContentPane(),"tictactoe");
                               Xplayer=false;
-                              jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\o455.png")); 
-                              jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\x455.png")); 
+                              jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\o455.png")); 
+                              jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\x455.png")); 
                               jPanel4.setBackground(new java.awt.Color(51, 204, 255));
                               jPanel6.setBackground(new java.awt.Color(255, 102, 102));//do
                               enable = false;
@@ -1451,8 +1451,8 @@ public class Cilent_Tictactoe extends javax.swing.JFrame implements Runnable{
                               CardLayout CLT=(CardLayout)this.getContentPane().getLayout();
                               CLT.show(this.getContentPane(),"tictactoe");
                               Xplayer=false;
-                              jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\o455.png")); 
-                              jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\x455.png")); 
+                              jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\o455.png")); 
+                              jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\x455.png")); 
                               jPanel4.setBackground(new java.awt.Color(51, 204, 255));
                               jPanel6.setBackground(new java.awt.Color(255, 102, 102));
                               enable = false;
@@ -1461,13 +1461,12 @@ public class Cilent_Tictactoe extends javax.swing.JFrame implements Runnable{
             }
 //---------------------------------------------------------------------------------------------------------------------------------
             public void X(String mess){
-                  System.out.println("XXXXXXXXXXXXXXX");
                               resetgame();
                               CardLayout CLT=(CardLayout)this.getContentPane().getLayout();
                               CLT.show(this.getContentPane(),"tictactoe");
                               Xplayer=true;
-                              jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\x455.png")); 
-                              jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\o455.png")); 
+                              jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\x455.png")); 
+                              jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\o455.png")); 
                               jPanel6.setBackground(new java.awt.Color(51, 204, 255));
                               jPanel4.setBackground(new java.awt.Color(255, 102, 102));
                               enable = true;
@@ -1486,10 +1485,10 @@ public class Cilent_Tictactoe extends javax.swing.JFrame implements Runnable{
 //-------------------------------------------------------------------------------------------------------------
             public void CheckClick(JLabel g,String xo,int m,int n){
                   if (xo.equals("x")) {
-                                     g.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\x68.png"));
+                                     g.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\x68.png"));
                                      matrix[m][n] = 1;
                                } else {
-                                     g.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\o68.png"));
+                                     g.setIcon(new javax.swing.ImageIcon("C:\\Java\\TICTACTOE\\Image\\o68.png"));
                                      matrix[m][n] = 2;
                                }
             }
