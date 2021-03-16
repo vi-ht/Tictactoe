@@ -1,6 +1,6 @@
 # 🎮 Welcome to Tictactoe repository 🎮
 
-## 1️⃣ You will find in this repo:
+### 1️⃣ You will find in this repo:
 * Tictactoe Java source code
 * .gitignore file to tell Git which ones will be uploaded
 * README.md - this file ifself to show the home page of this repo
